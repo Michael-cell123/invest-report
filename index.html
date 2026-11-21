@@ -32,12 +32,14 @@ td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:now
 .miss{color:var(--sub)}
 .pending{color:var(--gold);font-weight:600}
 .big{font-size:19px;font-weight:700}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-.kpi{background:#fff;border:1px solid var(--line);border-top:3px solid var(--blue);
-border-radius:10px;padding:14px 16px;box-shadow:0 1px 3px rgba(120,20,20,.05)}
-.kpi .k{font-size:12.5px;color:var(--sub)}
-.kpi .v{font-size:22px;font-weight:700;margin-top:2px;font-variant-numeric:tabular-nums;
-color:#7f1414}
+.grid{display:flex;flex-wrap:nowrap;gap:10px;overflow-x:auto;padding-bottom:2px}
+.kpi{flex:1 1 0;min-width:0;background:#fff;border:1px solid var(--line);
+border-top:3px solid var(--blue);border-radius:10px;padding:12px 14px;
+box-shadow:0 1px 3px rgba(120,20,20,.05)}
+.kpi .k{font-size:12.5px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kpi .v{font-size:21px;font-weight:700;margin-top:2px;font-variant-numeric:tabular-nums;
+color:#7f1414;white-space:nowrap}
+@media(max-width:900px){.kpi{flex:0 0 150px}}
 .note{font-size:12.8px;color:var(--sub)}
 .leg{font-size:13.5px;color:#3a2b2d;margin:2px 0}
 .leg b{color:#7f1414}
@@ -86,5 +88,5 @@ font-size:13px;color:#8a1f1f;margin:14px 0}
 <tr><td>2026-11-21</td><td class="num">0/5</td><td class="num">15,000.00</td><td class="num">—</td><td class="num miss">—</td><td class="num">—</td><td>待开奖</td></tr>
 </table>
 
-<div class="footer">生成时间 2026-11-21 14:43</div>
+<div class="footer">生成时间 2026-11-21 18:54</div>
 </div></body></html>
